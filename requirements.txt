@@ -1,0 +1,9 @@
+
+langchain-text-splitters
+pypdf
+chromadb
+sentence-transformers
+ollama
+pandas
+ragas
+openai
