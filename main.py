@@ -6,10 +6,10 @@ from src.embeddings import embed_documents
 from src.retrieval_and_generation import ask_pdf
 
 question = ["What is the mechanism of action of metformin?",
-            "What are the common side effects of metformin?",
-            "How does metformin affect glucose production in the liver?",
-            "What is the role of AMPK in metformin's mechanism of action?",
-            "What is the recommended dosage of metformin for a 5-year-old child?",
+            #"What are the common side effects of metformin?",
+            #"How does metformin affect glucose production in the liver?",
+            #"What is the role of AMPK in metformin's mechanism of action?",
+            #"What is the recommended dosage of metformin for a 5-year-old child?",
             "What is the recipe for biryani?"]
 
 
