@@ -37,9 +37,12 @@ if question:
     with st.chat_message("assistant"):
         with st.spinner("Searching documents..."):
             try:
+                history = st.session_state.messages[:-1]
+
                 answer, context = ask_pdf(
                     question,
-                    top_k=5
+                    top_k=5,
+                    history=history
                 )
 
                 st.markdown(answer)
