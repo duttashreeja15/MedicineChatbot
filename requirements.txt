@@ -8,3 +8,6 @@ pandas
 ragas
 openai
 streamlit
+fastapi
+uvicorn[standard]
+requests
