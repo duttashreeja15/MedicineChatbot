@@ -2,6 +2,11 @@ from sentence_transformers import SentenceTransformer
 from ollama import Client
 import chromadb
 from functools import lru_cache
+import time
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 
 
@@ -51,6 +56,7 @@ def rewrite_question(question, history, llm):
 
 
 def ask_pdf(question, top_k=5, history=None):
+    start_time = time.perf_counter()
     history = history or []
 
     chroma_client = chromadb.PersistentClient(
@@ -134,6 +140,28 @@ def ask_pdf(question, top_k=5, history=None):
             },
         ],
         options={"temperature": 0},
+    )
+    retrieval_end = time.perf_counter()
+    
+    generation_end = time.perf_counter()
+
+    retrieval_latency = retrieval_end - start_time
+    generation_latency = generation_end - retrieval_end
+    total_latency = generation_end - start_time
+
+    logger.info(
+        "Retrieval (including query processing): %.2f seconds",
+        retrieval_latency
+    )
+
+    logger.info(
+        "LLM generation: %.2f seconds",
+        generation_latency
+    )
+
+    logger.info(
+        "Total response time: %.2f seconds",
+        total_latency
     )
 
     return response.message.content,context
