@@ -4,6 +4,7 @@ import chromadb
 from functools import lru_cache
 import time
 import logging
+import os
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -60,7 +61,10 @@ def ask_pdf(question, top_k=5, history=None):
     history = history or []
 
     chroma_client = chromadb.PersistentClient(
-        path="data/chroma_db"
+        path=os.getenv(
+            "CHROMA_PATH",
+            "data/chroma_db"
+        )
     )
 
     collection = chroma_client.get_collection(
@@ -69,7 +73,12 @@ def ask_pdf(question, top_k=5, history=None):
     )
 
     embedding_model = get_embedding_model()
-    llm = Client(host="http://localhost:11434")
+    llm = Client(
+        host=os.getenv(
+            "OLLAMA_URL",
+            "http://localhost:11434"
+        )
+    )
 
     standalone_question = rewrite_question(
         question, history, llm

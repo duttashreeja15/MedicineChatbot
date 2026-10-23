@@ -1,0 +1,90 @@
+question,answer,context,faithfulness,answer_relevance
+What is the mechanism of action of metformin?,"Based on the provided excerpts, the mechanism of action of metformin is multifaceted and not fully defined, but it appears to involve several key pathways.
+
+Here’s a breakdown of the mechanisms described:
+
+1.  **Enhancement of Insulin Sensitivity and Reduction of Hepatic Glucose Output:** Metformin is recognized for this effect (Page 3).
+
+2.  **Targeting Cancer Biology:** Preclinical data suggests metformin can prevent and treat cancer by targeting proliferation and apoptosis, and mitigating drug resistance (Page 8).
+
+3.  **mTOR Pathway Modulation:** In KYSE450 cells, metformin treatment suppressed the expression of 4EBP1 and S6K1, which are target genes of the mTOR signaling pathway (Page 11).  The expression of phosphorylated forms of these proteins was also inhibited (Page 11).
+
+4.  **NF-κB Pathway and AMPK Activation:** Metformin inhibits P-glycoprotein expression via the NF-κB pathway and CRE transcriptional activity through AMPK activation (Page 26).
+
+5.  **Redox Homeostasis Modulation:** Metformin demonstrates anti-tumor activity through the modulation of redox homeostasis (Page 26).
+
+It’s important to note that the excerpts cite several research papers (Viollet et al., 2012; Maida et al., 2011; Kim et al., 2011; Peng et al.) that provide more detailed information about these mechanisms, but the excerpts themselves do not elaborate on those specific studies.","[Source: /Users/shreejadutta/Documents/PythonCoding/healthcare-rag/data/documents/metformin literature.pdf, page 3]
+Figure 1. The multifaceted mechanisms underlying metformin’s anti-cancer effects. Metformin,
+recognized for its role in enhancing insulin sensitivity and reducing hepatic glucose output, engages
+
+[Source: /Users/shreejadutta/Documents/PythonCoding/healthcare-rag/data/documents/metformin literature.pdf, page 8]
+Preclinical data indicates that metformin exhibits potential for both the prevention and
+treatment of EC. This potential arises from its ability to target various fundamental aspects
+of cancer biology, including proliferation and apoptosis, mitigation of drug resistance,
+
+[Source: /Users/shreejadutta/Documents/PythonCoding/healthcare-rag/data/documents/metformin literature.pdf, page 26]
+19. Viollet, B.; Guigas, B.; Garcia, N.S.; Leclerc, J.; Foretz, M.; Andreelli, F. Cellular and Molecular Mechanisms of Metformin: An
+Overview. Clin. Sci. 2012, 122, 253–270. [CrossRef]
+20. Maida, A.; Lamont, B.J.; Cao, X.; Drucker, D.J. Metformin Regulates the Incretin Receptor Axis via a Pathway Dependent on
+Peroxisome Proliferator-Activated Receptor-α in Mice. Diabetologia 2011, 54, 339–349. [CrossRef]
+
+[Source: /Users/shreejadutta/Documents/PythonCoding/healthcare-rag/data/documents/metformin literature.pdf, page 26]
+Expressing Cells. Blood 2011, 118, 6399–6402. [CrossRef]
+25. Kim, H.G.; Hien, T.T.; Han, E.H.; Hwang, Y.P .; Choi, J.H.; Kang, K.W.; Kwon, K.; Kim, B.-H.; Kim, S.K.; Song, G.Y.; et al. Metformin
+Inhibits P-Glycoprotein Expression via the NF-KB Pathway and CRE Transcriptional Activity through AMPK Activation. Br. J.
+Pharmacol. 2011, 162, 1096–1108. [CrossRef]
+
+[Source: /Users/shreejadutta/Documents/PythonCoding/healthcare-rag/data/documents/metformin literature.pdf, page 11]
+with metformin treatment compared to those treated with normal saline, and notably, no
+discernible toxic reactions were observed. To delve deeper into the underlying mechanism,
+they found that metformin treatment markedly suppressed the expression of 4EBP1 and
+S6K1-two target genes of mTOR signaling pathway-in KYSE450 cells both in vitro and
+in vivo. Additionally, the expression of phosphorylated forms, p-4EBP1, and p-S6K1 in
+KYSE450 cells, was significantly inhibited both in vitro and in vivo [58].
+Recent research has revealed that the anti-diabetic medication metformin demonstrates
+anti-tumor activity through the modulation of redox homeostasis [ 55,59,60]. Peng et al.
+conducted a comparative analysis of the molecular mechanisms of metformin in the ESCC",0.9,0.95
+What is the recipe for biryani?,The provided PDF excerpts do not contain a recipe for biryani. They focus on research related to metformin and its effects on cancer cells.,"[Source: /Users/shreejadutta/Documents/PythonCoding/healthcare-rag/data/documents/metformin literature.pdf, page 18]
+pressed in cancers, is re-
+garded as an oncogenic driver. CDK4/6 inhibitors, such as palbociclib, show initial eﬃ-
+cacy, but resistance develops, often associated with Rb loss [84].
+ 
+Recent investigations have shown that Gln metabolism plays a crucial role in
+ 
+the sur-
+vival and proliferation of tumor cells, making them dependent on Gln [85]. Glutaminoly-
+sis, the process by which Gln is metabolized to produce energy, is regulated by oncogenes 
+and tumor suppressors through the control of glutaminase (GLS) expressio
+n and activa-
+tion. GLS1, one of the isoforms of GLS, is a key enzyme in this process. Suppression of 
+GLS1 leads to apoptosis, decreased cell proliferation, and inhibited tumor growth. Addi-
+
+[Source: /Users/shreejadutta/Documents/PythonCoding/healthcare-rag/data/documents/metformin literature.pdf, page 26]
+Pharmacol. 2011, 162, 1096–1108. [CrossRef]
+26. Rocha, G.Z.; Dias, M.M.; Ropelle, E.R.; Os ório-Costa, F.; Rossato, F.A.; Vercesi, A.E.; Saad, M.J.A.; Carvalheira, J.B.C. Metformin
+Amplifies Chemotherapy-Induced AMPK Activation and Antitumoral Growth. Clin. Cancer Res. 2011, 17, 3993–4005. [CrossRef]
+27. Abo-Elmatty, D.M.; Ahmed, E.A.; Tawfik, M.K.; Helmy, S.A. Metformin Enhancing the Antitumor Efficacy of Carboplatin
+
+[Source: /Users/shreejadutta/Documents/PythonCoding/healthcare-rag/data/documents/metformin literature.pdf, page 11]
+and increased expression of Bim. In an Eca109 xenograft model, metformin significantly
+curtailed tumor growth. Furthermore, it was observed that metformin treatment increased
+the rate of apoptosis, downregulated PKM2, and upregulated Bim in tumor tissues [57].
+Moreover, in a study conducted by Wang et al., it was revealed that metformin not only
+demonstrated an anti-proliferative effect in a dose- and time-dependent manner but also
+had a dose-dependent pro-apoptotic impact on the KYSE450 ESCC cell line [58]. In vivo
+experiments demonstrated a significant inhibition of KYSE450 xenograft tumor growth
+with metformin treatment compared to those treated with normal saline, and notably, no
+discernible toxic reactions were observed. To delve deeper into the underlying mechanism,
+
+[Source: /Users/shreejadutta/Documents/PythonCoding/healthcare-rag/data/documents/metformin literature.pdf, page 9]
+was markedly altered, with upregulation of three miRNAs and significant downregulation
+of ten miRNAs out of the 985 miRNA probes investigated [53]. The above are mentioned
+briefly in the Table 4.
+
+[Source: /Users/shreejadutta/Documents/PythonCoding/healthcare-rag/data/documents/metformin literature.pdf, page 23]
+effects: it (1) induces pyroptosis and (2) inhibits NF- κB to impede EC progression. (3) It also
+disrupts CHRNA7, targeting the JAK2/STAT3/SOX2 pathway, and suppresses PD-L1 via the IL-
+6/JAK2/STAT3 pathway, enhancing the antitumor immune response. NF-kB, nuclear factor kappa-
+light-chain-enhancer of activated B cells; CHRNA7, neuronal acetylcholine receptor subunit alpha-
+7 gene, JAK2, Janus kinase 2; STAT3, signal transducer and activator of transcription 3 protein; SOX2,
+SRY (sex-determining region Y)-box 2 protein; PD-L1, programmed death-ligand 1 protein; IL6,",0.0,1.0

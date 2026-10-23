@@ -1,5 +1,6 @@
 import chromadb
 from sentence_transformers import SentenceTransformer
+import os
 
 
 def embed_documents(chunks):
@@ -16,7 +17,9 @@ def embed_documents(chunks):
     #print(embeddings.shape)  # (number_of_chunks, 384)
 
     # Save the database in a local folder
-    client = chromadb.PersistentClient(path="data/chroma_db")
+    client = chromadb.PersistentClient(
+    path=os.getenv("CHROMA_PATH", "data/chroma_db")
+)
 
     # We supply our own embeddings from all-MiniLM-L6-v2
     collection = client.get_or_create_collection(
